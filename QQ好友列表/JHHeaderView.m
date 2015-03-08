@@ -55,6 +55,11 @@
         
         // 设置按钮标题颜色
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        // 设置btn中的图片不填充整个imageview
+        btn.imageView.contentMode = UIViewContentModeCenter;
+        // 超出范围的图片不要剪切
+        //        btn.imageView.clipsToBounds = NO;
+        btn.imageView.layer.masksToBounds = NO;
         [self addSubview:btn];
         self.btn = btn;
         
@@ -89,7 +94,24 @@
 
 -(void)btnOnClick:(UIButton *)btn
 {
-    NSLog(@"click");
+    //NSLog(@"click");
+    // 1.修改组模型的isOpen属性
+    // 修改模型数据
+    self.qqGroup.open = !self.qqGroup.isOpen;
+    // 2.刷新表格（通知代理）
+    if ([self.delegate respondsToSelector:@selector(headerViewDidClickHeaderView:)]) {
+        [self.delegate headerViewDidClickHeaderView:self];
+    }
+}
+
+#pragma mark - 当一个控件被添加到其它视图上的时候会调用以下方法
+// 已经被添加到父视图上的时候会调用
+- (void)didMoveToSuperview
+{
+    // 在这个方法中就快要拿到最新的被添加到tableview上的头部视图修改它的图片
+    if (self.qqGroup.isOpen) {
+        self.btn.imageView.transform = CGAffineTransformMakeRotation(M_PI_2);
+    }
 }
 
 -(void)setQqGroup:(JHQQGroupModel *)qqGroup

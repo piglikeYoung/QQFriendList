@@ -12,7 +12,7 @@
 #import "JHFriendCell.h"
 #import "JHHeaderView.h"
 
-@interface ViewController ()
+@interface ViewController ()<JHHeaderViewDelegate>
 
 // 保存所有的分组数据
 @property (strong , nonatomic) NSArray *qqGroups;
@@ -56,7 +56,21 @@
     // 1.取出对应的组模型
     JHQQGroupModel *qqGroup = self.qqGroups[section];
     // 2.返回对应的组中的好友数
-    return qqGroup.friends.count;
+//    return qqGroup.friends.count;
+    
+    if (qqGroup.open) {
+        // 代表展开
+        return qqGroup.friends.count;
+    } else {
+        // 代表要合拢
+        return 0;
+    }
+}
+
+-(void)headerViewDidClickHeaderView:(JHHeaderView *)headerView
+{
+    // 重新调用数据源的方法加载数据
+    [self.tableView reloadData];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -74,10 +88,13 @@
 }
 
 #pragma mark - 代理方法
+// 当一个分组标题进入视野的时候就会调用该方法
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     // 1.创建头部视图
     JHHeaderView *headerView = [JHHeaderView headerViewWithTableView:tableView];
+    // 设置当前控制器为代理
+    headerView.delegate = self;
     // 2.返回头部视图
     headerView.qqGroup = self.qqGroups[section];
     

@@ -20,6 +20,10 @@
 // 在线人数
 @property (copy , nonatomic) NSString *online;
 
+
+// 记录当前组是否需要打开
+@property (nonatomic, assign, getter = isOpen) BOOL open;
+
 JHInitH(qqGroup)
 
 @end

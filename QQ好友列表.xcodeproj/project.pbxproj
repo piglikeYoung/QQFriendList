@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DBB5BD91AAC1B6D00730F69 /* JHHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DBB5BD81AAC1B6D00730F69 /* JHHeaderView.m */; };
 		7DC938D11AAB2DB30083F877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC938D01AAB2DB30083F877 /* main.m */; };
 		7DC938D41AAB2DB30083F877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC938D31AAB2DB30083F877 /* AppDelegate.m */; };
 		7DC938D71AAB2DB30083F877 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC938D61AAB2DB30083F877 /* ViewController.m */; };
@@ -14,6 +15,10 @@
 		7DC938DC1AAB2DB30083F877 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC938DB1AAB2DB30083F877 /* Images.xcassets */; };
 		7DC938DF1AAB2DB30083F877 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC938DD1AAB2DB30083F877 /* LaunchScreen.xib */; };
 		7DC938EB1AAB2DB30083F877 /* QQ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC938EA1AAB2DB30083F877 /* QQ____Tests.m */; };
+		7DC938F71AAB2E4A0083F877 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7DC938F61AAB2E4A0083F877 /* friends.plist */; };
+		7DC938FA1AAB2E7C0083F877 /* JHFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC938F91AAB2E7C0083F877 /* JHFriendModel.m */; };
+		7DC938FF1AAB30080083F877 /* JHFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC938FE1AAB30080083F877 /* JHFriendCell.m */; };
+		7DC939021AAB33560083F877 /* JHQQGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC939011AAB33560083F877 /* JHQQGroupModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DBB5BD71AAC1B6D00730F69 /* JHHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHHeaderView.h; sourceTree = "<group>"; };
+		7DBB5BD81AAC1B6D00730F69 /* JHHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHHeaderView.m; sourceTree = "<group>"; };
 		7DC938CB1AAB2DB30083F877 /* QQ好友列表.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QQ好友列表.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC938CF1AAB2DB30083F877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC938D01AAB2DB30083F877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,14 @@
 		7DC938E41AAB2DB30083F877 /* QQ好友列表Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QQ好友列表Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC938E91AAB2DB30083F877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC938EA1AAB2DB30083F877 /* QQ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "QQ____Tests.m"; sourceTree = "<group>"; };
+		7DC938F61AAB2E4A0083F877 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
+		7DC938F81AAB2E7C0083F877 /* JHFriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFriendModel.h; sourceTree = "<group>"; };
+		7DC938F91AAB2E7C0083F877 /* JHFriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFriendModel.m; sourceTree = "<group>"; };
+		7DC938FC1AAB2F7D0083F877 /* JHGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHGlobal.h; sourceTree = "<group>"; };
+		7DC938FD1AAB30080083F877 /* JHFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFriendCell.h; sourceTree = "<group>"; };
+		7DC938FE1AAB30080083F877 /* JHFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFriendCell.m; sourceTree = "<group>"; };
+		7DC939001AAB33560083F877 /* JHQQGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHQQGroupModel.h; sourceTree = "<group>"; };
+		7DC939011AAB33560083F877 /* JHQQGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHQQGroupModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +98,17 @@
 			children = (
 				7DC938D21AAB2DB30083F877 /* AppDelegate.h */,
 				7DC938D31AAB2DB30083F877 /* AppDelegate.m */,
+				7DC938FC1AAB2F7D0083F877 /* JHGlobal.h */,
 				7DC938D51AAB2DB30083F877 /* ViewController.h */,
 				7DC938D61AAB2DB30083F877 /* ViewController.m */,
+				7DBB5BD71AAC1B6D00730F69 /* JHHeaderView.h */,
+				7DBB5BD81AAC1B6D00730F69 /* JHHeaderView.m */,
+				7DC938F81AAB2E7C0083F877 /* JHFriendModel.h */,
+				7DC938F91AAB2E7C0083F877 /* JHFriendModel.m */,
+				7DC938FD1AAB30080083F877 /* JHFriendCell.h */,
+				7DC938FE1AAB30080083F877 /* JHFriendCell.m */,
+				7DC939001AAB33560083F877 /* JHQQGroupModel.h */,
+				7DC939011AAB33560083F877 /* JHQQGroupModel.m */,
 				7DC938D81AAB2DB30083F877 /* Main.storyboard */,
 				7DC938DB1AAB2DB30083F877 /* Images.xcassets */,
 				7DC938DD1AAB2DB30083F877 /* LaunchScreen.xib */,
@@ -96,6 +120,7 @@
 		7DC938CE1AAB2DB30083F877 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DC938F61AAB2E4A0083F877 /* friends.plist */,
 				7DC938CF1AAB2DB30083F877 /* Info.plist */,
 				7DC938D01AAB2DB30083F877 /* main.m */,
 			);
@@ -201,6 +226,7 @@
 			files = (
 				7DC938DA1AAB2DB30083F877 /* Main.storyboard in Resources */,
 				7DC938DF1AAB2DB30083F877 /* LaunchScreen.xib in Resources */,
+				7DC938F71AAB2E4A0083F877 /* friends.plist in Resources */,
 				7DC938DC1AAB2DB30083F877 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +246,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC938D71AAB2DB30083F877 /* ViewController.m in Sources */,
+				7DC938FA1AAB2E7C0083F877 /* JHFriendModel.m in Sources */,
 				7DC938D41AAB2DB30083F877 /* AppDelegate.m in Sources */,
+				7DC938FF1AAB30080083F877 /* JHFriendCell.m in Sources */,
 				7DC938D11AAB2DB30083F877 /* main.m in Sources */,
+				7DBB5BD91AAC1B6D00730F69 /* JHHeaderView.m in Sources */,
+				7DC939021AAB33560083F877 /* JHQQGroupModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +442,7 @@
 				7DC938F01AAB2DB30083F877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DC938F11AAB2DB30083F877 /* Build configuration list for PBXNativeTarget "QQ好友列表Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +451,7 @@
 				7DC938F31AAB2DB30083F877 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
